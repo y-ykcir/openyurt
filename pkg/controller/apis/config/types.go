@@ -23,6 +23,7 @@ import (
 
 	gatewayconfig "github.com/openyurtio/openyurt/pkg/controller/gateway/config"
 	nodepoolconfig "github.com/openyurtio/openyurt/pkg/controller/nodepool/config"
+	poolcoordinatorconfig "github.com/openyurtio/openyurt/pkg/controller/poolcoordinator/config"
 )
 
 // YurtControllerManagerConfiguration contains elements describing yurt-controller manager.
@@ -46,6 +47,9 @@ type YurtManagerConfiguration struct {
 
 	// GatewayControllerConfiguration holds configuration for  GatewayController related features.
 	GatewayController gatewayconfig.GatewayControllerConfiguration
+
+	// PoolCoordinatorCertControllerConfiguration holds configuration for  PoolCoordinatorCertController related features.
+	PoolCoordinatorCertController poolcoordinatorconfig.PoolCoordinatorCertControllerConfiguration
 }
 
 type GenericConfiguration struct {

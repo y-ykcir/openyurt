@@ -16,6 +16,7 @@ poolCoordinator:
   apiserverResources:
     requests:
       cpu: 250m
+  namespace: kube-system
   serviceClusterIPRange: 10.96.0.0/12
   etcdPort: 12379
   etcdMetricPort: 12381

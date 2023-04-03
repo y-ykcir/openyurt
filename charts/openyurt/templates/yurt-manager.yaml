@@ -57,6 +57,7 @@ spec:
             - --health-probe-addr=:{{ .Values.yurtManager.healthProbe.port }}
             - --logtostderr=true
             - --v={{ .Values.yurtManager.log.level }}
+            - --pool-coordinator-namespace={{ .Values.poolCoordinator.namespace | quote }}
           command:
             - /usr/local/bin/yurt-manager
           image: {{ .Values.yurtManager.image.repository }}:{{ .Values.yurtManager.image.tag }}
