@@ -32,7 +32,6 @@ const (
 	KubeletServiceFilepath   = "/etc/systemd/system/kubelet.service"
 	KubeletServiceConfPath   = "/etc/systemd/system/kubelet.service.d/10-kubeadm.conf"
 	KubeletSvcPath           = "/usr/lib/systemd/system/kubelet.service.d/10-kubeadm.conf"
-	YurthubStaticPodFileName = "yurthub.yaml"
 	PauseImagePath           = "registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.2"
 	DefaultCertificatesDir   = "/etc/kubernetes/pki"
 	DefaultDockerCRISocket   = "/var/run/dockershim.sock"
